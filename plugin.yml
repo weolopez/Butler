@@ -1,0 +1,109 @@
+name: Butler
+authors: [weolopez]
+description: Butler is a Citizens 2.0 character trait that gives NPCs the ability to follow orders and work with Denizen.
+version: 1.7.1
+main: com.weolopez.butler.Butler
+dev-url: http://dev.bukkit.org/server-mods/butler-citizens2/
+website: http://wiki.citizensnpcs.co/Butler
+depend: [Citizens]
+softdepend: [Denizen, Vault, Towny, Factions, War, SimpleClans]
+
+commands:
+  butler:
+    description: Lists butler commands.
+    usage: /butler help
+
+permissions:
+  butler.*:
+    default: op
+    children:
+       butler.target: true
+       butler.ignore: true
+       butler.stats.*: true
+       butler.options.*: true
+       butler.spawn: true
+       butler.guard: true
+       butler.info: true
+       butler.warning: true
+       butler.greeting: true
+       butler.reload: true   
+       butler.equip: true
+       butler.bodyguard.*: true
+  butler.stats.*:
+     default: op
+     children:
+       butler.stats.strength: true
+       butler.stats.range: true
+       butler.stats.armor: true
+       butler.stats.speed: true
+       butler.stats.nightvision: true
+       butler.stats.respawn: true
+       butler.stats.health: true
+       butler.stats.attackrate: true     
+       butler.stats.healrate: true     
+       butler.stats.warningrange: true    
+       butler.stats.follow: true 
+  butler.options.*:
+     default: op
+     children:
+       butler.options.invincible: true
+       butler.options.retaliate: true
+       butler.options.drops: true
+       butler.options.killdrops: true
+       butler.options.criticals: true 
+       butler.options.mount: true
+       butler.options.targetable: true
+  butler.spawn:
+     deafult: op
+  butler.target:
+     deafult: op
+  butler.ignore:
+     deafult: op
+  butler.guard:
+     deafult: op
+  butler.info:
+     deafult: op
+  butler.warning:
+     deafult: op
+  butler.reload:
+     deafult: op
+  butler.greeting:
+     deafult: op
+  butler.stats.strength:
+     default: op
+  butler.stats.armor:
+     default: op
+  butler.stats.speed:
+     default: op
+  butler.stats.nightvision:
+     default: op
+  butler.stats.range:
+     default: op
+  butler.stats.respawn:
+     default: op
+  butler.stats.health:
+     default: op  
+  butler.stats.warningrange:
+     default: op
+  butler.stats.follow:
+     default: op
+  butler.stats.attackrate:
+     default: op
+  butler.stats.healrate:
+     default: op
+  butler.options.invincible:
+     default: op
+  butler.options.retaliate: 
+     default: op
+  butler.options.drops: 
+     default: op
+  butler.options.killdrops: 
+     default: op
+  butler.options.criticals: 
+     default: op
+  butler.bodyguard.*:
+     default: true
+  butler.options.mount: 
+     default: op
+  butler.options.targetable: 
+     default: op
