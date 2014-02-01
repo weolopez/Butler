@@ -82,22 +82,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.p000ison.dev.simpleclans2</groupId>
-            <artifactId>SimpleClans2</artifactId>
-            <version>1.0.3-SNAPSHOT</version>
-            <type>jar</type>
-            <scope>system</scope>
-          <systemPath>${project.basedir}/lib/SimpleClans.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>com.tommytony.war</groupId>
-            <artifactId>war</artifactId>
-            <version>1.7.4</version>
-            <type>jar</type>
-            <scope>system</scope>
-          <systemPath>${project.basedir}/lib/War.jar</systemPath>
-        </dependency>
-        <dependency>
             <groupId>com.palmergames.bukkit</groupId>
             <artifactId>towny</artifactId>
             <version>0.84.0.4</version>
